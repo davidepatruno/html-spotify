@@ -109,7 +109,7 @@
  flex-direction: row;
 }
 
-@media screen and (max-width: 600) {
+@media screen and (max-width: 600px) {
   .hamburgher_menu {
     display: block;
   }
