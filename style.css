@@ -105,6 +105,8 @@
  height: 1000px;
  width: 100%;
  background-image:linear-gradient(#353736, black);
+ display: flex;
+ flex-direction: row;
 }
 
 @media screen and (max-width: 600) {
@@ -122,10 +124,11 @@
 .header_wrapper {
   height: 100px;
   width: 100%;
-  /* background-color: red; */
+  background-color: red;
   display: flex;
   flex-direction: column;
   position: relative;
+  align-self: flex-start;
 }
 
 .right_logosection {
