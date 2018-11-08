@@ -27,7 +27,7 @@
   padding: 10px;
 }
 
-.logosection {
+.left_logosection {
   height: 40px;
   /* background-color: red; */
   padding: 3%;
@@ -35,7 +35,7 @@
   justify-content: center;
 }
 
-.logosection > img {
+.left_logosection > img {
   max-height: 30px;
 }
 
@@ -93,9 +93,70 @@
 /* right_section */
 .right_section {
  height: 500px;
- width: 50%;
+ width: 100%;
  background-color: pink;
+ display: flex;
+ flex-direction: column;
+ position: relative;
 }
+
+.right_logosection {
+  position: absolute;
+  align-self: flex-start;
+  margin: 35px 20px;
+  display: none;
+}
+
+.right_logosection > img {
+  height: 50px;
+}
+
+.righthead {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-self: center;
+}
+.righthead > a {
+  display: block;
+  margin-right: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.righthead > a:hover {
+  color: white;
+}
+
+.hamburgher_menu {
+  position: absolute;
+  align-self: flex-end;
+  margin: 40px 20px;
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .hamburgher_menu {
+    display: block;
+  }
+  .righthead {
+    display: none;
+  }
+  .right_logosection {
+    display: block;
+  }
+}
+
+.hamburgher_menu > a {
+  padding: 15px 30px;
+  font-size: 30px;
+  color: grey;
+}
+
+.hamburgher_menu > a:hover {
+  color: white;
+}
+
 /*Fine right_section */
 
 /*bottom_section */
