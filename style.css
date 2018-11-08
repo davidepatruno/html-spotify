@@ -10,6 +10,10 @@
   color: grey;
 }
 
+.color_lightgrey {
+  color: lightgrey;
+}
+
 .generalwrapper {
   display: flex;
   justify-content: flex-start;
@@ -20,11 +24,11 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  width: 15%;
+  width: 200px;
   height: 95vh;
   background-color: black;
   border: 1px solid black;
-  padding: 10px;
+  padding: 20px;
 }
 
 .left_logosection {
@@ -40,12 +44,13 @@
 }
 
 .leftnav_bar {
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .leftnav_bar > a {
   display: block;
   font-size: 15px;
+  padding-bottom: 20px;
   text-decoration: none;
 }
 
@@ -63,12 +68,17 @@
 }
 
 .center_section {
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .center_section > .recent_song, .recent_playlist {
   font-size: 10px;
-  margin: 0;
+  font-weight: 700;
+}
+
+.center_section > h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .bottom_section > hr {
@@ -92,12 +102,30 @@
 
 /* right_section */
 .right_section {
- height: 500px;
+ height: 1000px;
  width: 100%;
- background-color: pink;
- display: flex;
- flex-direction: column;
- position: relative;
+ background-image:linear-gradient(#353736, black);
+}
+
+@media screen and (max-width: 600) {
+  .hamburgher_menu {
+    display: block;
+  }
+  .righthead {
+    display: none;
+  }
+  .right_logosection {
+    display: block;
+  }
+}
+
+.header_wrapper {
+  height: 100px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .right_logosection {
@@ -111,40 +139,11 @@
   height: 50px;
 }
 
-.righthead {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  align-self: center;
-}
-.righthead > a {
-  display: block;
-  margin-right: 20px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.righthead > a:hover {
-  color: white;
-}
-
 .hamburgher_menu {
   position: absolute;
   align-self: flex-end;
   margin: 40px 20px;
   display: none;
-}
-
-@media screen and (max-width: 500px) {
-  .hamburgher_menu {
-    display: block;
-  }
-  .righthead {
-    display: none;
-  }
-  .right_logosection {
-    display: block;
-  }
 }
 
 .hamburgher_menu > a {
@@ -157,11 +156,31 @@
   color: white;
 }
 
+.righthead {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-self: center;
+}
+
+.righthead > a {
+  display: block;
+  margin-right: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.righthead > a:hover {
+  color: white;
+}
+
+
+
 /*Fine right_section */
 
 /*bottom_section */
 .bottom_fixed {
- height: 100px;
+ height: 10vh;
  width: 100%;
  background-color: blue;
  position: fixed;
