@@ -1,0 +1,109 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+.color_white {
+  color: white;
+}
+
+.color_grey {
+  color: grey;
+}
+
+.generalwrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Left_fixed */
+.left_fixed {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 15%;
+  height: 95vh;
+  background-color: black;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.logosection {
+  height: 40px;
+  /* background-color: red; */
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.logosection > img {
+  max-height: 30px;
+}
+
+.leftnav_bar {
+  background-color: blue;
+}
+
+.leftnav_bar > a {
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.leftnav_bar > a:hover {
+  color: white;
+}
+
+.leftnav_bar > .active {
+  color: #00D856;
+}
+
+.leftnav_bar > a > i , .bottom_section > a > i {
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.center_section {
+  background-color: yellow;
+}
+
+.center_section > .recent_song, .recent_playlist {
+  font-size: 10px;
+  margin: 0;
+}
+
+.bottom_section > hr {
+  margin: 10px 0;
+}
+
+.bottom_section > a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.bottom_section > a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.bottom_section > a:hover {
+  color: white;
+}
+/*fine left_fixed left*/
+
+/* right_section */
+.right_section {
+ height: 500px;
+ width: 50%;
+ background-color: pink;
+}
+/*Fine right_section */
+
+/*bottom_section */
+.bottom_fixed {
+ height: 100px;
+ width: 100%;
+ background-color: blue;
+ position: fixed;
+ bottom: 0px;
+ left: 0px;
+}
